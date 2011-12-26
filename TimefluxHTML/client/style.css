@@ -91,3 +91,37 @@ h1 {
     margin:0;
     margin-top:5px;
 }
+
+#hours {
+    clear:both;
+    padding-top: 30px;
+}
+
+#inputrow ul li {
+    width:170px;
+}
+
+#inputrow ul li+li {
+    width:50px;
+}
+
+#inputrow ul li+li+li {
+    width:280px;
+}
+
+#inputrow Li {
+    float:left;
+    list-style: none;
+    font-size: large;
+    margin-right:20px;
+}
+
+#inputrow ul {
+    clear:both;
+}
+
+.add {
+    width: 25px;
+    height:25px;
+        
+}
