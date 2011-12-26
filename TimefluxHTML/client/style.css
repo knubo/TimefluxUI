@@ -92,31 +92,35 @@ h1 {
     margin-top:5px;
 }
 
-#hours {
+#timeentry {
     clear:both;
     padding-top: 30px;
 }
 
-#inputrow ul li {
+.inputrow ul li {
     width:170px;
 }
 
-#inputrow ul li+li {
+.inputrow ul li+li {
+    width:200px;
+}
+
+.inputrow ul li+li+li {
     width:50px;
 }
 
-#inputrow ul li+li+li {
+.inputrow ul li+li+li+li {
     width:280px;
 }
 
-#inputrow Li {
+.inputrow Li {
     float:left;
     list-style: none;
-    font-size: large;
+    font-size: medium;
     margin-right:20px;
 }
 
-#inputrow ul {
+.inputrow ul {
     clear:both;
 }
 
@@ -124,4 +128,24 @@ h1 {
     width: 25px;
     height:25px;
         
+}
+
+.data {
+    height:12px;
+}
+.data li {
+    margin-left:9px;
+    font-size:small;
+}
+
+.data li+li {
+    margin-left: 0px;
+}
+
+.data li+li+li {
+    margin-left: -5px;
+}
+
+.data li+li+li+li {
+    margin-left:0px;
 }

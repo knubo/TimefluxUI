@@ -4,6 +4,7 @@
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="time_entry.js"/>
         <script>
             $(document).ready(function(){  
       
@@ -64,26 +65,33 @@
             </div>
         </div>
 
-        <div id="hours">
-       
-        <div id="inputrow">
-            <ul>
-                <li>Dag</li>
-                <li>Timer</li>
-                <li>Notater</li>
-            </ul>
-            <ul>
-                <li><select name="day">
-                        <option>Monday 26th Desember</option>
-                        <option>Tuesday 27th Desember</option>
-                        <option>Wednesday 28th Desember</option>
-                    </select></li>
-                <li><input name="hours" size="2"/></li>
-                <li><input name="comment" size="40"/></li>
-                <li><input type="image" src="list-add-4.png" class="add"/>
-            </ul>
-            
-        </div>
+        <div id="timeentry">
+
+            <div class="inputrow">
+                <ul>
+                    <li>Day</li>
+                    <li>Project</li>
+                    <li>Hours</li>
+                    <li>Notes</li>
+                </ul>
+                
+                <ul id="timeheader">
+                    <li><select id="day">
+                            <option value="2011-12-26">Monday 26th Desember</option>
+                            <option value="2011-12-27">Tuesday 27th Desember</option>
+                            <option value="2011-12-28">Wednesday 28th Desember</option>
+                        </select></li>
+                    <li><select id="project">
+                            <option value=""></option>
+                            <option value="1">NSB > Kundemaster > Utvikling</option>
+                            <option value="2">Internt > Fravær > Ferie</option>
+                        </select></li>
+                    <li><input id="hours" size="2"/></li>
+                    <li><input id="notes" size="40"/></li>
+                    <li><input type="image" src="list-add-4.png" class="add" onclick="addRow()"/></li>
+                </ul>
+
+            </div>
         </div>
     </body>
 
