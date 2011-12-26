@@ -139,7 +139,7 @@ h1 {
 }
 
 .data li+li {
-    margin-left: 0px;
+    margin-left: -1px;
 }
 
 .data li+li+li {
